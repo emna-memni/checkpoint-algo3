@@ -1,0 +1,34 @@
+PROCEDURE dot_product(v1,v2:Array_of_float,VAR ps:float)
+VAR
+i:integer;
+BEGIN
+   if(v1.length==v2.length)
+   FOR i FROM0 TO 2 STEP 1 
+    PS:=+PS+(V1[i]*v2[i]
+    END FOR 
+    write (ps);
+    ELSE
+    write('the length of the two arrays is not equal')
+    
+END
+ALGORITHM algo3()
+VAR
+  i,j,n:integer;
+  v1,v2 : ARRAY_OF float[];
+  ps:float;
+BEGIN
+  REPEAT
+read(n1);
+read(n2);
+
+  UNTIL (n1>0 n2>0)
+  
+  ps:=dot_product(v1,v2,ps)
+  IF (ps==0)
+  THEN
+  write ("the two vectors are orthogonal")
+  ELSE
+  write ("the two vectors are  NOT orthogonal")
+END IF
+END FOR
+END
